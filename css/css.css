@@ -10,7 +10,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
-/* General body styles */
+
+/* Body styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #eae3d5;
@@ -23,10 +24,10 @@ body {
 /* Murats section */
 header {
   position: fixed; /* Fastgjort øverst */
+  background-color: #d7ac84;
   top:0;
   left:0;
   right:0;
-  padding: 10px 7%;
   display: flex;
   align-items: center; /* Vertikalt centreret */
   justify-content: space-between;  /* Sørg for, at logo og menu er på hver sin side */
@@ -61,7 +62,7 @@ header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 200px;
-  background: #fff;
+  background:#fff;
   display: none;
 }
 header .navbar ul li ul li {
@@ -89,15 +90,19 @@ header label {
 }
 /* Murats section slut */
 
+
+
 /* Logo styling */
 .logo {
   flex: 1; /* Sørger for, at mit logoet holder sin plads til venstre */
 }
 
+
+
+/* Navbar styling */
 .navbar {
   display: flex;
 }
-
 
 .navbar ul {
   list-style: none;
@@ -124,6 +129,8 @@ header label {
   border-radius: 5px;
 }
 
+
+
 /* Hero menu i midten section */
 
 .hero{
@@ -145,28 +152,33 @@ header label {
   color: #edfbd0;
   margin-bottom: 20px;
   background-color: #884738;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 30px; /* Mere padding for at gøre boksen større */
+  border-radius: 5px;  /* Rundede hjørner */
   font-weight: bold;
+  display: inline-block; /* Holder boksen tæt om teksten */
+  margin-bottom: 20px; /* Mellemrum under overskriften */
 }
-
+/* Hero section - knapper */
 .buttons {
   gap: 20px;
 }
 
-/* Brune kasser section */
+
+/* Brune knapper section */
 .btn {
   background-color: #884738;
   color: #edfbd0;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: bold; /* Gør teksten fed */
   transition: background-color 0.3s ease;
 }
 .btn:hover {
   background-color: #C1A18C;
 }
+
+
 /* Introduction section */
 .intro {
   background-color: #eae3d5;
@@ -176,6 +188,8 @@ header label {
   font-weight: bold;
   color: #884738;
 }
+
+
 /* Articles section */
 .articles {
   padding: 40px 0px;
@@ -218,15 +232,94 @@ article a {
 article a:hover {
   color: #C1A18C;
 }
+
+
+/* Pleje og Vedligeholdelse specifik styling */
+.maintenance-page {
+  padding: 60px 20px;
+  background-color: #f4ead5;
+  text-align: center;
+}
+
+.maintenance-page h2 {
+  background-color: #884738;
+  color: #eef1e8;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  display: inline-block;
+  margin-bottom: 20px; /* Mellemrum under overskriften */
+}
+
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+article {
+  background-color: #cfd7be;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #828e65;
+}
+
+article a {
+  text-decoration: none;
+  color: #828e65;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #C1A18C;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.pagination a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #884738;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+
+
 /* Nyhedsbrev section */
 .newsletter {
   padding: 40px 20px;
   text-align: center;
   background-color: #EAE3D2;
+  border-radius: 10px;
+  margin: 40px 0;
 }
-.newsletter p {
+.newsletter h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: #828e65;
+  font-size: 1.8rem;
 }
 .newsletter form {
   display: flex;
@@ -238,6 +331,8 @@ article a:hover {
   border: 1px solid #020202;
   border-radius: 5px;
   width: 300px;
+  margin-bottom: 40px;
+  font-size: 1rem;
 }
 .newsletter button {
   padding: 10px 20px;
@@ -246,10 +341,22 @@ article a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 40px;
 }
 .newsletter button:hover {
   background-color: #C1A18C;
 }
+
+.thank-you-message {
+  display: none; /* Skjult som standard */
+  color: green;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+
 
 /* Footer */
 footer {

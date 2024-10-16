@@ -14,7 +14,7 @@
         <div class="baggrund">
         <header>
             <div class="logo">
-                <img src="images/Logo.png" alt="Logo"> 
+                    <img src="images/Logo.png" alt="Logo">
             </div>
                     <!-- Nav bar start -->
                         <nav class="navbar">
@@ -60,49 +60,44 @@
                         </nav>
                     </div>
                     </div>
-            
-             <!-- Hero Section -->
         </header>
-        <section   class="hero">
-            <div class="hero-content">
-                <h2>Planter og bæredygtighed som passer til din livsstil</h2>
-                <div class="buttons">
-                    <a href="#" class="btn">Budgetvenlig planter</a>
-                    <a href="#" class="btn">Tips & Tricks</a>
-                </div>
-            </div>
-        </section>
-    </div>
 
-        <!-- Introduktion Section -->
-        <section class="intro">
-            <p>Velkommen til Plant Studio - din guide til et grønnere liv!</p>
-            <p>Du vil herinde kunne finde kreative guides og bæredygtige tips til planter, uden det koster en formue.</p>
-            <p>Du vil kunne finde budgetvenlige måder at integrere planter i din hverdag,</p>
-            <p>og lære hvordan du kan tage små skridt mod en mere bæredygtig fremtid!</p>
-        </section>
 
-         <!-- Hendvisninger til andre artikler -->
-        <section class="articles">
-            <h2>Relevante artikler</h2>
-            <div class="article-list">
-                <article>
-                    <img src="images/Sådan vander du dine planter.png" alt="Vanding af planter">
-                    <h3>Sådan vander du dine planter</h3>
-                    <a href="artikelplanter.html">Læs mere</a>
-                </article>
-                <article>
-                    <img src="images/løg i glas.png" alt="Dyrkning af nye planter">
-                    <h3>Sådan dyrker du nye planter</h3>
-                    <a href="#">Læs mere</a>
-                </article>
-                <article>
-                    <img src="images/Skygge.png" alt="Planter der kan lide skygge">
-                    <h3>Planter som kan lide skygge</h3>
-                    <a href="#">Læs mere</a>
-                </article>
-            </div>
-        </section>
+        <!-- Pleje og vedligeholdelse - Artikler -->
+    <section class="maintenance-page">
+        <h2>Pleje og vedligeholdelse</h2>
+        <div class="article-list">
+            <article>
+                <img src="images//Sådan vander du dine planter.png" alt="Vanding af planter">
+                <h3>Sådan vander du dine planter</h3>
+                <a href="artikelplanter.html">Læs mere</a>
+            </article>
+            <article>
+                <img src="images/Placering.png" alt="Placering og sollys">
+                <h3>Placering og sollys</h3>
+                <a href="#">Læs mere</a>
+            </article>
+            <article>
+                <img src="images/Skygge.png" alt="Planter der kan lide skygge">
+                <h3>Planter som kan lide skygge</h3>
+                <a href="#">Læs mere</a>
+            </article>
+            <article>
+                <img src="images/sukkl.png" alt="Vanding af sukkulenter">
+                <h3>Vanding af sukkulenter</h3>
+                <a href="#">Læs mere</a>
+            </article>
+            <article>
+                <img src="images/Kaktus.png" alt="Vanding af kaktusser">
+                <h3>Vanding af kaktusser</h3>
+                <a href="#">Læs mere</a>
+            </article>
+            <article>
+                <img src="images/pilea.png" alt="Vanding af pilea">
+                <h3>Vanding af pilea</h3>
+                <a href="#">Læs mere</a>
+            </article>
+        </div>
 
             <!-- Nyhedsbrev -->
             <section class="newsletter">
@@ -111,7 +106,7 @@
                     <input type="email" id="email" placeholder="Indtast din e-mail" required>
                     <button type="submit">Tilmeld</button>
                 </form>
-                <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding! Du er nu tilmeld nyhedsbrevet!</p>
+                <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding!</p>
             </section> 
 
         <!-- Footer -->
@@ -128,15 +123,15 @@
                 <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
             </div>
         </footer>
+
         <script>
             function handleSubmit(event) {
                 event.preventDefault(); // Forhindrer sidegenindlæsning ved indsendelse af formular
                 var thankYouMessage = document.getElementById('thankYouMessage');
-                thankYouMessage.style.display = 'block'; // Vis thank for dinn tilmelding besked
+                thankYouMessage.style.display = 'block'; // Vis takke-besked
                 document.getElementById('signupForm').reset(); // Nulstil formularen
             }
         </script>
+        
     </body>
     </html>
-    
-        
