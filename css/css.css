@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center; /* Vertikalt centreret */
   justify-content: space-between;  /* Sørg for, at logo og menu er på hver sin side */
-  z-index: 10000;
+  z-index: 10000; /* Stak niveau */
 }
 header .logo {
   font-weight: bolder;
@@ -98,6 +98,7 @@ header label {
 }
 
 
+
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -123,6 +124,7 @@ header label {
 .navbar ul li a:hover {
   color:  #828e65;
 }
+
 
 
 /* Hero menu i midten section */
@@ -151,11 +153,11 @@ header label {
   display: inline-block; /* Holder boksen tæt om teksten */
   margin-bottom: 20px; /* Mellemrum under overskriften */
 }
+
 /* Hero section - knapper */
 .buttons {
   gap: 20px;
 }
-
 /* Brune knapper section */
 .btn {
   background-color: #884738;
@@ -171,6 +173,7 @@ header label {
 }
 
 
+
 /* Introduction section */
 .intro {
   background-color: #f4ead5;
@@ -180,6 +183,7 @@ header label {
   font-weight: bold;
   color: #884738;
 }
+
 
 
 /* Annonce artikler section */
@@ -227,6 +231,7 @@ article a:hover {
 article :hover{
   transform: scale(1.05); /* Lidt zoom ved hover for en interaktiv effekt */
 }
+
 
 
 /* Pleje og vedligeholdelse subside styling */
@@ -309,6 +314,7 @@ article :hover{
 }
 
 
+
 /* Madrester-avocado-vande - Alle artikeler styling */
 .single-artikel {
   padding: 100px 20px;
@@ -362,27 +368,29 @@ ul li strong {
   color: #884738;
 }
 
+
+
 /* Relevante artiklerne i bunden */
-.læs-mere-artikler {
+.relevante-artikler {
   margin-top: 20px;  /* Øger mellemrum over sektionen */
   text-align: center;
   padding-top: 20px;
 }
 
-.læs-mere-artikler h3 {
+.relevante-artikler h3 {
   font-size: 1.8rem;
   margin-bottom: 20px; /* Mellemrum under "Læs mere om"-overskriften */
   color: #884738;
 }
 
-.læs-mere-artikler .artikel-list {
+.relevante-artikler .artikel-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Mellemrum mellem artikler */
 }
 
-.læs-mere-artikler article {
+.relevante-artikler article {
   background-color: #cfd7be;
   border-radius: 10px;
   padding: 20px;
@@ -392,34 +400,32 @@ ul li strong {
   transition: transform 0.2s ease-in-out;
 }
 
-.læs-mere-artikler article img {
+.relevante-artikler article img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
-.læs-mere-artikler article h3 {
+.relevante-artikler article h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #828e65;
 }
 
-.læs-mere-artikler article a {
+.relevante-artikler article a {
   text-decoration: none;
   font-weight: bold;
   color: #828e65;
 }
 
-.læs-mere-artikler article a:hover {
+.relevante-artikler article a:hover {
   color: #C1A18C;
 }
 
-.læs-mere-artikler article:hover {
+.relevante-artikler article:hover {
   transform: scale(1.05); /* Gør artiklerne interaktive ved hover */
 }
-
-
 /* Justering for mindre skærme */
 @media (max-width: 768px) {
   .artikel-list {
@@ -432,6 +438,9 @@ ul li strong {
   }
 }
 
+
+
+
 /* Nyhedsbrev section */
 .nyhedsbrev {
   padding: 40px 20px;
@@ -440,7 +449,17 @@ ul li strong {
   margin: 40px 0;
   margin-top: 20px; 
 }
+.nyhedsbrev h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #828e65;
+  font-size: 1.8rem;
+}
 .nyhedsbrev h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #828e65;
+  font-size: 0.9rem;
+}
+.nyhedsbrev h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: #828e65;
   font-size: 1.8rem;
@@ -449,6 +468,7 @@ ul li strong {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding: 10px;
 }
 .nyhedsbrev input[type="email"] {
   padding: 10px;
@@ -473,12 +493,13 @@ ul li strong {
   background-color: #C1A18C;
 }
 
-.thank-you-message {
+.tak-besked {
   display: none; /* Skjult som standard */
-  color: #828e65;
-  margin-top: 20px;
+  color: #515f30;
   font-size: 1.2rem;
 }
+
+
 
 
 /* Footer */
@@ -507,6 +528,7 @@ footer nav ul li a {
   width: 30px;
   margin: 0 10px;
 }
+
 
 
 @media (max-width: 768px) {

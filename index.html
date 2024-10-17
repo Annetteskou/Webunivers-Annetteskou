@@ -57,7 +57,7 @@
                                 <li><a href="#">Kontakt</a>
                                     <ul>
                                         <li><a href="#">Om os</a></li>
-                                        <li><a href="#">Tilmeld nyhedsbrev</a></li>
+                                        <li><a section="#">Tilmeld nyhedsbrev</a></li>
                                         <li><a href="#">Social medier</a></li>
                                     </ul>
                                 </li>
@@ -92,18 +92,18 @@
             <h2>Relevante artikler</h2>
             <div class="artikel-list">
                 <article>
-                    <img src="images/Sådan vander du dine planter.png" alt="Vanding af planter">
+                    <img src="images/vande k.png" alt="Vanding af planter">
                     <h3>Sådan vander du dine planter</h3>
                     <a href="vande.html">Læs mere</a>
                 </article>
                 <article>
                     <img src="images/løg i glas.png" alt="Dyrkning af nye planter">
                     <h3>Sådan dyrker du nye planter</h3>
-                    <a href="#">Læs mere</a>
+                    <a href="madrester.html">Læs mere</a>
                 </article>
                 <article>
-                    <img src="images/Skygge.png" alt="Planter der kan lide skygge">
-                    <h3>Planter som kan lide skygge</h3>
+                    <img src="images/Planter og sollys.png" alt="Placering og sollys">
+                    <h3>Placering og sollys</h3>
                     <a href="#">Læs mere</a>
                 </article>
             </div>
@@ -111,12 +111,13 @@
 
             <!-- Nyhedsbrev -->
             <section class="nyhedsbrev">
-                <h2>Tilmeld dig vores nyhedsbrev</h2>
+                <h1>Grønne fingre?</h1>
+                <h2>Tilmeld dig vores nyhedsbrev, og få inspiration til dine grønne projekter</h2>
                 <form id="signupForm" onsubmit="return handleSubmit(event)">
                     <input type="email" id="email" placeholder="Indtast din e-mail" required>
                     <button type="submit">Tilmeld</button>
                 </form>
-                <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
+                <p class="tak-besked" id="takBesked">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
             </section> 
 
         <!-- Footer -->
@@ -136,8 +137,8 @@
         <script>
             function handleSubmit(event) {
                 event.preventDefault(); // Forhindrer sidegenindlæsning ved indsendelse af formular
-                var thankYouMessage = document.getElementById('thankYouMessage');
-                thankYouMessage.style.display = 'block'; // Vis tak for din tilmelding besked
+                var takBesked = document.getElementById('takBesked');
+                takBesked.style.display = 'block'; // Vis tak for din tilmelding besked
                 document.getElementById('signupForm').reset(); // Nulstil formularen
             }
         </script>

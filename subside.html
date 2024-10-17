@@ -73,33 +73,33 @@
         <h2>Pleje og vedligeholdelse</h2>
         <div class="artikel-list">
             <article>
-                <img src="images//Sådan vander du dine planter.png" alt="Vanding af planter">
+                <img src="images/vande k.png" alt="Vanding af planter">
                 <h3>Sådan vander du dine planter</h3>
                 <a href="vande.html"class="read-more">Læs mere</a>
             </article>
             <article>
-                <img src="images/Placering.png" alt="Placering og sollys">
+                <img src="images/Planter og sollys.png" alt="Placering og sollys">
                 <h3>Placering og sollys</h3>
                 <a href="#"class="read-more">Læs mere</a>
             </article>
             <article>
-                <img src="images/Skygge.png" alt="Planter der kan lide skygge">
+                <img src="images/skygge planter i .png" alt="Planter der kan lide skygge">
                 <h3>Planter som kan lide skygge</h3>
                 <a href="#">Læs mere</a>
             </article>
             <article>
-                <img src="images/sukkl.png" alt="Vanding af sukkulenter">
+                <img src="images/suklerne.png" alt="Vanding af sukkulenter">
                 <h3>Vanding af sukkulenter</h3>
                 <a href="#">Læs mere</a>
             </article>
             <article>
-                <img src="images/Kaktus.png" alt="Vanding af kaktusser">
+                <img src="images/kakak.png" alt="Vanding af kaktusser">
                 <h3>Vanding af kaktusser</h3>
                 <a href="#">Læs mere</a>
             </article>
             <article>
-                <img src="images/pilea.png" alt="Vanding af pilea">
-                <h3>Vanding af pilea</h3>
+                <img src="images/paradisfugl.png" alt="Vanding af paradisfugl">
+                <h3>Vanding af paradisfugl</h3>
                 <a href="#">Læs mere</a>
             </article>
         </div>
@@ -117,12 +117,12 @@
       <!-- Nyhedsbrev -->
         </section>
             <section class="nyhedsbrev">
-                <h2>Tilmeld dig vores nyhedsbrev</h2>
+                <h3>Tilmeld dig vores nyhedsbrev</h3>
                 <form id="signupForm" onsubmit="return handleSubmit(event)">
                     <input type="email" id="email" placeholder="Indtast din e-mail" required>
                     <button type="submit">Tilmeld</button>
                 </form>
-                <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
+                <p class="tak-besked" id="takBesked">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
         </section> 
 
         <!-- Footer -->
@@ -141,11 +141,11 @@
         </footer>
 
         <script>
-            function handleSubmit(event) {
-                event.preventDefault(); 
-                var thankYouMessage = document.getElementById('thankYouMessage');
-                thankYouMessage.style.display = 'block'; 
-                document.getElementById('signupForm').reset(); 
+               function handleSubmit(event) {
+                event.preventDefault(); // Forhindrer sidegenindlæsning ved indsendelse af formular
+                var takBesked = document.getElementById('takBesked');
+                takBesked.style.display = 'block'; // Vis tak for din tilmelding besked
+                document.getElementById('signupForm').reset(); // Nulstil formularen
             }
         </script>
         
