@@ -14,11 +14,13 @@
         <div class="baggrund">
         <header>
             <div class="logo">
+                <a href="index.html">
                     <img src="images/Logo.png" alt="Logo">
             </div>
                     <!-- Nav bar start -->
                         <nav class="navbar">
                             <ul>
+                                <a href="#"> 
                                 <li><a href="#">Budgetvenlige planter</a>
                                     <ul>
                                         <li><a href="#">Indendørsplanter</a></li>
@@ -28,6 +30,7 @@
                                         <li><a href="#">Spiselige blomster</a></li>
                                     </ul>
                                 </li>
+                                <a href="#"> 
                                 <li><a href="#">Tips og Tricks</a>
                                     <ul>
                                         <li><a href="#">Budgettips</a></li>
@@ -37,6 +40,7 @@
                                         <li><a href="subside.html">Pleje og vedligeholdelse</a></li>
                                     </ul>
                                 </li>
+                                <a href="#"> 
                                 <li><a href="#">Bæredygtig</a>
                                     <ul>
                                         <li><a href="#">Urban gardening</a></li>
@@ -49,6 +53,7 @@
                                         <li><a href="#">Kompost</a></li>
                                     </ul>
                                 </li>
+                                <a href="#"> 
                                 <li><a href="#">Kontakt</a>
                                     <ul>
                                         <li><a href="#">Om os</a></li>
@@ -62,8 +67,8 @@
                     </div>
         </header>
 
- <!-- Artikel Sektion -->
- <section class="single-article">
+  <!-- Artikel Sektion -->
+ <section class="single-artikel">
     <h1>Genbrug af madrester: Sådan dyrker du nye planter</h1>
     <img src="images/Madrester i glas.jpg" alt="Genbrug af madrester billede">
     <p>Genbrug af madrester er ikke kun en bæredygtig praksis, men det kan også hjælpe dig med at dyrke dine egne planter derhjemme. Hvis du har grøntsager eller krydderurter tilovers, kan du ofte genbruge dem til at starte en helt ny plante...</p>
@@ -91,49 +96,51 @@
     <h2>Afsluttende tanker</h2>
     <p>Genbrug af madrester er en smart måde at reducere madspild på, samtidig med at du kan dyrke nye planter derhjemme. Giv det et forsøg næste gang, du har rester i køkkenet!</p>
 
+
     <!-- Relaterede artikler -->
-    <section class="related-articles">
-        <h3>Læs mere om</h3>
-        <div class="article-list">
-            <article>
-                <img src="images/avocado1.png" alt="Avocadoplante">
-                <h3>Få din egen avocadoplante</h3>
-                <a href="avocado.html">Læs mere</a>
-            </article>
-            <article>
-                <img src="images/Sådan vander du dine planter.png" alt="Vanding af planter">
-                <h3>Sådan vander du dine planter</h3>
-                <a href="vande.html">Læs mere</a>
-            </article>
+        <section class="læs-mere">
+            <h3>Læs mere om</h3>
+            <div class="artikel-list">
+                <article>
+                    <img src="images/avocado1.png" alt="Avocadoplante">
+                    <h3>Få din egen avocadoplante</h3>
+                    <a href="avocado.html">Læs mere</a>
+                </article>
+                <article>
+                    <img src="images/Sådan vander du dine planter.png" alt="Vanding af planter">
+                    <h3>Sådan vander du dine planter</h3>
+                    <a href="vande.html">Læs mere</a>
+                </article>
+            </div>
+        </section>
+</section>
+
+<!-- Nyhedsbrev -->
+</section>
+    <section class="nyhedsbrev">
+        <h2>Tilmeld dig vores nyhedsbrev</h2>
+        <form id="signupForm" onsubmit="return handleSubmit(event)">
+            <input type="email" id="email" placeholder="Indtast din e-mail" required>
+            <button type="submit">Tilmeld</button>
+        </form>
+        <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
+    </section> 
+
+ <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="#">Cookie- og Privatlivspolitik</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="social-media">
+            <a href="https://www.tiktok.com/explore"><img src="images/tiktok-icon-free-png.webp" alt="TikTok"></a>
+            <a href="https://www.instagram.com"><img src="images/Instagram_icon.png" alt="Instagram"></a>
         </div>
-    </section>
-</section>
+    </footer>
 
-   <!-- Nyhedsbrev -->
-</section>
-<section class="newsletter">
-    <h2>Tilmeld dig vores nyhedsbrev</h2>
-    <form id="signupForm" onsubmit="return handleSubmit(event)">
-        <input type="email" id="email" placeholder="Indtast din e-mail" required>
-        <button type="submit">Tilmeld</button>
-    </form>
-    <p class="thank-you-message" id="thankYouMessage">Tak for din tilmelding! Du er nu tilmeldt vores nyhedsbrev!</p>
-</section> 
-
-<!-- Footer -->
-<footer>
-    <nav>
-        <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="#">Cookie- og Privatlivspolitik</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-    <div class="social-media">
-        <a href="https://www.tiktok.com/explore"><img src="images/tiktok-icon-free-png.webp" alt="TikTok"></a>
-        <a href="https://www.instagram.com"><img src="images/Instagram_icon.png" alt="Instagram"></a>
-    </div>
-</footer>
 <script>
     function handleSubmit(event) {
         event.preventDefault(); 
@@ -142,6 +149,7 @@
         document.getElementById('signupForm').reset(); 
     }
 </script>
+
 </body>
 </html>
           

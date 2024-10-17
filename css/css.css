@@ -4,7 +4,6 @@
  **/
  
 ¨
-
 * {
   margin: 0px;
   padding: 0px;
@@ -58,14 +57,12 @@ header .navbar ul li a {
   padding: 10px;
   line-height: 1.2;
 }
-header .navbar ul li a:hover {
-  background-color: #C1A18C; /* Ændrer farve ved hover */
-}
+
 header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 200px;
-  background:#fff;
+  background: #fff;
   display: none;
 }
 header .navbar ul li ul li {
@@ -101,7 +98,6 @@ header label {
 }
 
 
-
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -120,22 +116,16 @@ header label {
 .navbar ul li a {
   text-decoration: none;
   font-size: 20px;
-  color: white; /* Hvid tekst for kontrast mod baggrunden */
   font-weight: bold;
   padding: 10px 15px;
 }
 
 .navbar ul li a:hover {
-  background-color: #C1A18C; /* Lysere brun farve ved hover */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+  color:  #828e65;
 }
 
 
-
 /* Hero menu i midten section */
-
 .hero{
   background-image: url('../images/Forside\ billede.png');
   background-size: cover; /* Sørger for, at billedet dækker hele sektionen */
@@ -192,17 +182,17 @@ header label {
 }
 
 
-/* Artikler section */
-.articles {
+/* Annonce artikler section */
+.annonce-artikler {
   padding: 40px 0px;
   text-align: center;
   background-color: #f4ead5;
 }
-.articles h2 {
+.annonce-artikler h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-.article-list {
+.artikel-list {
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -239,27 +229,26 @@ article :hover{
 }
 
 
-/* Pleje og vedligeholdelse side styling */
-
-.maintenance-page {
-  padding-top: 100px; /* Giver 100px mellemrum fra headeren */
+/* Pleje og vedligeholdelse subside styling */
+.pleje-subside {
+  padding-top: 120px; /* Giver 100px mellemrum fra headeren */
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f4ead5;
     text-align: center;
 }
 
-.maintenance-page h2 {
+.pleje-subside h2 {
   background-color: #884738;
-  color: #cfd7be;
+  color: #fff;
   padding: 15px 30px;
   font-size: 2rem;
   border-radius: 50px;
   display: inline-block;
-  margin-bottom: 40px; /* Mellemrum under overskriften */
+  margin-bottom: 30px; /* Mellemrum under overskriften */
 }
 
-.article-list {
+.artikel-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -320,39 +309,44 @@ article :hover{
 }
 
 
-/* Madrester artikel styling */
-.single-article {
+/* Madrester-avocado-vande - Alle artikeler styling */
+.single-artikel {
   padding: 100px 20px;
   max-width: 800px;
   margin: 0 auto;
   background-color: #f4ead5;
-  color: #884738;
+  color: #565656;
 }
 
-.single-article h1 {
+.single-artikel h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
+  color: #606e42;
 }
 
-.single-article img {
+.single-artikel img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.single-article p {
+.single-artikel p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.single-article h2 {
+.single-artikel h2 {
   font-size: 1.8rem;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: #884738;
+  color: #606e42;
+}
+
+.single-artikel strong {
+  color:  #884738;
 }
 
 ul {
@@ -368,27 +362,27 @@ ul li strong {
   color: #884738;
 }
 
-/* Artiklerne i bunden */
-.related-articles {
+/* Relevante artiklerne i bunden */
+.læs-mere-artikler {
   margin-top: 20px;  /* Øger mellemrum over sektionen */
   text-align: center;
   padding-top: 20px;
 }
 
-.related-articles h3 {
+.læs-mere-artikler h3 {
   font-size: 1.8rem;
   margin-bottom: 20px; /* Mellemrum under "Læs mere om"-overskriften */
   color: #884738;
 }
 
-.related-articles .article-list {
+.læs-mere-artikler .artikel-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px; /* Mellemrum mellem artikler */
 }
 
-.related-articles article {
+.læs-mere-artikler article {
   background-color: #cfd7be;
   border-radius: 10px;
   padding: 20px;
@@ -398,37 +392,37 @@ ul li strong {
   transition: transform 0.2s ease-in-out;
 }
 
-.related-articles article img {
+.læs-mere-artikler article img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 
-.related-articles article h3 {
+.læs-mere-artikler article h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #828e65;
 }
 
-.related-articles article a {
+.læs-mere-artikler article a {
   text-decoration: none;
   font-weight: bold;
   color: #828e65;
 }
 
-.related-articles article a:hover {
+.læs-mere-artikler article a:hover {
   color: #C1A18C;
 }
 
-.related-articles article:hover {
+.læs-mere-artikler article:hover {
   transform: scale(1.05); /* Gør artiklerne interaktive ved hover */
 }
 
 
 /* Justering for mindre skærme */
 @media (max-width: 768px) {
-  .article-list {
+  .artikel-list {
       flex-direction: column; /* Stak artiklerne vertikalt på små skærme */
       align-items: center; /* Centrer artiklerne */
   }
@@ -439,24 +433,24 @@ ul li strong {
 }
 
 /* Nyhedsbrev section */
-.newsletter {
+.nyhedsbrev {
   padding: 40px 20px;
   text-align: center;
   background-color: #f4ead5;
   margin: 40px 0;
   margin-top: 20px; 
 }
-.newsletter h2 {
+.nyhedsbrev h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: #828e65;
   font-size: 1.8rem;
 }
-.newsletter form {
+.nyhedsbrev form {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.newsletter input[type="email"] {
+.nyhedsbrev input[type="email"] {
   padding: 10px;
   border: 1px solid #020202;
   border-radius: 5px;
@@ -464,7 +458,7 @@ ul li strong {
   margin-bottom: 40px;
   font-size: 1rem;
 }
-.newsletter button {
+.nyhedsbrev button {
   padding: 10px 20px;
   background-color: #828e65;
   color: white;
@@ -475,7 +469,7 @@ ul li strong {
   display: inline-block;
   margin-bottom: 40px;
 }
-.newsletter button:hover {
+.nyhedsbrev button:hover {
   background-color: #C1A18C;
 }
 
@@ -485,7 +479,6 @@ ul li strong {
   margin-top: 20px;
   font-size: 1.2rem;
 }
-
 
 
 /* Footer */
@@ -514,6 +507,7 @@ footer nav ul li a {
   width: 30px;
   margin: 0 10px;
 }
+
 
 @media (max-width: 768px) {
   .hero {
