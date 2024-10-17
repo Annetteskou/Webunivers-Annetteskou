@@ -125,8 +125,6 @@ header label {
   color:  #828e65;
 }
 
-
-
 /* Hero menu i midten section */
 .hero{
   background-image: url('../images/Forside\ billede.png');
@@ -236,7 +234,7 @@ article :hover{
 
 /* Pleje og vedligeholdelse subside styling */
 .pleje-subside {
-  padding-top: 120px; /* Giver 100px mellemrum fra headeren */
+  padding-top: 120px; /* Giver mellemrum fra headeren */
     padding-left: 20px;
     padding-right: 20px;
     background-color: #f4ead5;
@@ -379,7 +377,7 @@ ul li strong {
 
 .relevante-artikler h3 {
   font-size: 1.8rem;
-  margin-bottom: 20px; /* Mellemrum under "Læs mere om"-overskriften */
+  margin-bottom: 20px; /* Mellemrum under "Læs mere"-overskriften */
   color: #884738;
 }
 
@@ -424,7 +422,7 @@ ul li strong {
 }
 
 .relevante-artikler article:hover {
-  transform: scale(1.05); /* Gør artiklerne interaktive ved hover */
+  transform: scale(1.05); 
 }
 /* Justering for mindre skærme */
 @media (max-width: 768px) {
@@ -527,18 +525,4 @@ footer nav ul li a {
 .social-media a img {
   width: 30px;
   margin: 0 10px;
-}
-
-
-
-@media (max-width: 768px) {
-  .hero {
-    height: 300px; /* Mindre højde for mobile enheder */
-  }
-  .hero h2 {
-    font-size: 1.8rem; /* Mindre tekststørrelse */
-  }
-  .buttons {
-    flex-direction: column; /* Stak knapperne vertikalt */
-  }
 }
